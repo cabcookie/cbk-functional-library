@@ -1,0 +1,43 @@
+{
+    "name": "cbk-functional-library",
+    "version": "0.0.5",
+    "description": "This library includes functional helpers for object, string, and array processing.",
+    "main": "./lib/index.js",
+    "scripts": {
+        "start": "nodemon src/index.ts",
+        "push-and-publish": "git push --follow-tags origin main",
+        "release": "tsc -p && standard-version && npm run push-and-publish",
+        "major-release": "tsc -p && standard-version --release-as major && npm run push-and-publish",
+        "fresh-npm-install": "rm -rf ./node_modules ./package-lock.json && npm install"
+    },
+    "bugs": {
+        "url": "https://github.com/cabcookie/cbk-functional-library/issues"
+    },
+    "keywords": [
+        "functional",
+        "functional-programming",
+        "javascript"
+    ],
+    "author": "Carsten Koch",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cabcookie/cbk-functional-library.git"
+    },
+    "deprecated": false,
+    "license": "MIT",
+    "bin": {
+        "cbk-functional-library": "./lib/index.js"
+    },
+    "dependencies": {
+        "lodash": "^4.17.20"
+    },
+    "devDependencies": {
+        "@types/lodash": "^4.14.167",
+        "@types/node": "^12.12.2",
+        "eslint": "^7.18.0",
+        "nodemon": "^2.0.7",
+        "standard-version": "^9.1.0",
+        "ts-node": "^9.1.1",
+        "typescript": "^4.1.3"
+    }
+}
