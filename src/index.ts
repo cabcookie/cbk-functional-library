@@ -67,6 +67,21 @@ import {
 } from "./strings/string-functions"
 import { isDevEnvironment } from "./extras/other-functions"
 import { dateComparator, stringComparator } from './extras/comparators'
+import {
+    makeDate,
+    now,
+    setTimer,
+    addSeconds,
+    addMinutes,
+    addDays,
+    toISOString,
+    shortDate,
+    shortDateTime,
+    shortTime,
+    secondsToHhMmSs,
+    secondsToMmSs,
+    minutesToHhMm,    
+} from './date-time/date-time-functions'
 
 export {
     checkObjectForProperty,
@@ -129,4 +144,17 @@ export {
     left,
     right,
     mid,
+    makeDate,
+    now,
+    setTimer,
+    addSeconds,
+    addMinutes,
+    addDays,
+    toISOString,
+    shortDate,
+    shortDateTime,
+    shortTime,
+    secondsToHhMmSs,
+    secondsToMmSs,
+    minutesToHhMm,
 }

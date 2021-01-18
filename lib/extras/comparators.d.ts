@@ -1,4 +1,3 @@
-declare type AscDescString = "asc" | "desc";
-export declare const stringComparator: (key?: string, order?: AscDescString) => (str1: string, str2: string) => any;
-export declare const dateComparator: (key?: string, order?: AscDescString) => (date1: Date, date2: Date) => any;
-export {};
+import { AscDescString, HasKey, FunctionWithTwoParamsReturnNumber } from "./type-helpers";
+export declare const stringComparator: <K extends string>(key: K, order: AscDescString) => FunctionWithTwoParamsReturnNumber<string | HasKey<K, string>>;
+export declare const dateComparator: <K extends string>(key: K, order: AscDescString) => FunctionWithTwoParamsReturnNumber<Date | HasKey<K, Date>>;
