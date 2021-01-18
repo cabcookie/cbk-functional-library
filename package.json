@@ -4,12 +4,18 @@
     "description": "This library includes functional helpers for object, string, and array processing.",
     "main": "./lib/index.js",
     "scripts": {
-        "push-and-publish": "git push --follow-tags origin main && npm publish",
+        "push": "git push --follow-tags origin main",
         "git-add-and-commit": "git add . && git commit -m 'fix: create build'",
-        "wipe-and-build": "rm -rf ./lib && tsc",
-        "release": "npm run wipe-and-build && standard-version && npm run push-and-publish",
-        "major-release": "npm run wipe-and-build && standard-version --release-as major && npm run push-and-publish",
-        "fresh-npm-install": "rm -rf ./node_modules ./package-lock.json && npm install"
+        "wipe": "rm -rf ./lib",
+        "build": "babel src -d lib --extensions '.ts'",
+        "document": "standard-version",
+        "document-major": "standard-version --release-as major",
+        "release": "npm-run-all test wipe build document push publish",
+        "major-release": "npm-run-all test wipe build document-major push publish",
+        "old_release": "npm run wipe-and-build && standard-version && npm run push-and-publish",
+        "old_major-release": "npm run wipe-and-build && standard-version --release-as major && npm run push-and-publish",
+        "fresh-npm-install": "rm -rf ./node_modules ./package-lock.json && npm install",
+        "test": "tsc && jest"
     },
     "bugs": {
         "url": "https://github.com/cabcookie/cbk-functional-library/issues"
@@ -30,15 +36,33 @@
         "cbk-functional-library": "./lib/index.js"
     },
     "dependencies": {
+        "@babel/polyfill": "^7.12.1",
         "lodash": "^4.17.20"
     },
     "devDependencies": {
+        "@babel/cli": "^7.12.10",
+        "@babel/core": "^7.12.10",
+        "@babel/plugin-proposal-class-properties": "^7.12.1",
+        "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+        "@babel/plugin-transform-arrow-functions": "^7.12.1",
+        "@babel/plugin-transform-modules-umd": "^7.12.1",
+        "@babel/preset-env": "^7.12.11",
+        "@babel/preset-typescript": "^7.12.7",
+        "@types/jest": "^26.0.20",
         "@types/lodash": "^4.14.167",
         "@types/node": "^12.12.2",
+        "babel": "^6.23.0",
+        "babel-jest": "^26.6.3",
         "eslint": "^7.18.0",
+        "jest": "^26.6.3",
         "nodemon": "^2.0.7",
         "standard-version": "^9.1.0",
         "ts-node": "^9.1.1",
         "typescript": "^4.1.3"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.[t|j]sx?$": "babel-jest"
+        }
     }
 }

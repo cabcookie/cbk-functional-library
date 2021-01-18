@@ -1,5 +1,5 @@
 import { flow, get } from "lodash/fp"
-import { argsToArray, map } from "../arrays/array-functions"
+import { map } from "../arrays/array-functions"
 import { upperCase } from "../strings/string-functions"
 
 type FixedSizeArray<N extends number, T> = N extends 0 ? never[] : {
@@ -9,11 +9,13 @@ type FixedSizeArray<N extends number, T> = N extends 0 ? never[] : {
 
 type AscDescString = "asc" | "desc"
 
+
+
 const compareValues = (arr: FixedSizeArray<2, string>) => (arr[0] > arr[1]) ? 1 :
     (arr[0] < arr[1]) ? -1 : 0
 const getComparableDate = (date: Date) => (new Date(date)).getTime()
 const compareDateValues = (arr: FixedSizeArray<2, Date>) => getComparableDate(arr[0]) - getComparableDate(arr[1])
-const ascDesc = (order: AscDescString) => (val: number) => order === 'desc' ? val * -1 : val
+const ascDesc = (order: AscDescString) => (val: number) => val === 0 ? 0 : order === 'desc' ? val * -1 : val
 
 export const stringComparator = (key = '', order: AscDescString = 'asc') => (str1: string, str2: string) => flow(
     map(get(key)),
