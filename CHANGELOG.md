@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.9...v0.0.10) (2021-01-18)
+
+
+### Bug Fixes
+
+* added commit after build ([3cecd06](https://github.com/cabcookie/cbk-functional-library/commit/3cecd0633816072b5e0ac1be23eaae6dde2120e1))
+* wipe-and-build couldn't handle no changes ([0c2f206](https://github.com/cabcookie/cbk-functional-library/commit/0c2f20621fe7591eec31e0a928ce3b79ec4fd80b))
+
 ### [0.0.9](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.8...v0.0.9) (2021-01-18)
 
 
