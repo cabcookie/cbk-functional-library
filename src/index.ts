@@ -66,6 +66,7 @@ import {
     mid,    
 } from "./strings/string-functions"
 import { isDevEnvironment } from "./extras/other-functions"
+import { dateComparator, stringComparator } from './extras/comparators'
 
 export {
     checkObjectForProperty,
@@ -75,6 +76,8 @@ export {
     addKey,
     isObject,
     isDevEnvironment,
+    dateComparator,
+    stringComparator,
     replaceNullValuesInObject,
     mult,
     plus,
