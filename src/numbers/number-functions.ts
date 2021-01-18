@@ -1,4 +1,4 @@
-const languageSetting = "de"
+const languageSetting = "en-US"
 export const mult = (b: number) => (a: number) => a * b
 export const plus = (b: number) => (a: number) => a + b
 export const minus = (b: number) => (a: number) => a - b

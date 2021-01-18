@@ -2,7 +2,7 @@ import { flow } from "lodash/fp"
 import { defaultFn, runFnOfObj } from "../higher-order/higher-order-funtions"
 import { upperCase } from "../strings/string-functions"
 
-const languageSetting = "de"
+const languageSetting = "en-US"
 export const makeDate = (str: string) => new Date(str)
 export const now = () => new Date()
 const clearTimer = (timer: any) => () => clearTimeout(timer)
