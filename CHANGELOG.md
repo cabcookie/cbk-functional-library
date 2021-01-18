@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.13](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.12...v0.0.13) (2021-01-18)
+
+
+### Features
+
+* include testing and build with babel ([1248a82](https://github.com/cabcookie/cbk-functional-library/commit/1248a82d85959fb7ca473f0235d4ad64149755ff))
+
+
+### Bug Fixes
+
+* adding npm publish ([1880454](https://github.com/cabcookie/cbk-functional-library/commit/1880454a1c27ace81df1c12c8c20515c7e16d87b))
+* installed npm-run-all ([4a4e4da](https://github.com/cabcookie/cbk-functional-library/commit/4a4e4daec9dbee5ec14fe73aa8e9db8dc4a3a464))
+
 ### [0.0.12](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.11...v0.0.12) (2021-01-18)
 
 
