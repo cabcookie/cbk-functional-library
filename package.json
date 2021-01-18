@@ -2,12 +2,11 @@
     "name": "cbk-functional-library",
     "version": "0.0.5",
     "description": "This library includes functional helpers for object, string, and array processing.",
-    "main": "./lib/index.js",
+    "main": "index.ts",
     "scripts": {
-        "start": "nodemon src/index.ts",
-        "push-and-publish": "git push --follow-tags origin main",
-        "release": "tsc -p && standard-version && npm run push-and-publish",
-        "major-release": "tsc -p && standard-version --release-as major && npm run push-and-publish",
+        "push-and-publish": "git push --follow-tags origin main && npm publish",
+        "release": "standard-version && npm run push-and-publish",
+        "major-release": "standard-version --release-as major && npm run push-and-publish",
         "fresh-npm-install": "rm -rf ./node_modules ./package-lock.json && npm install"
     },
     "bugs": {
