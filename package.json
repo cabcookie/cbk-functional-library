@@ -5,6 +5,7 @@
     "main": "./lib/index.js",
     "scripts": {
         "push": "git push --follow-tags origin main",
+        "publish": "npm publish",
         "git-add-and-commit": "git add . && git commit -m 'fix: create build'",
         "wipe": "rm -rf ./lib",
         "build": "babel src -d lib --extensions '.ts'",
