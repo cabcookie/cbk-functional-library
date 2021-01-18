@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.17](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.16...v0.0.17) (2021-01-18)
+
+
+### Bug Fixes
+
+* missed date/time functions ([3ac4709](https://github.com/cabcookie/cbk-functional-library/commit/3ac47098c26827dd670170cae9a334210d65539f))
+
 ### [0.0.16](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.15...v0.0.16) (2021-01-18)
 
 
