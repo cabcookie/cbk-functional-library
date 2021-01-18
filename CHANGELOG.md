@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.16](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.15...v0.0.16) (2021-01-18)
+
+
+### Bug Fixes
+
+* date and string compare type conform ([1f3c717](https://github.com/cabcookie/cbk-functional-library/commit/1f3c7174fd9b1394b1749dc10749d5489093abeb))
+* script for jest --watch ([d045179](https://github.com/cabcookie/cbk-functional-library/commit/d045179b114b9953256f6293dbb29329527970c3))
+
 ### [0.0.15](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.14...v0.0.15) (2021-01-18)
 
 
