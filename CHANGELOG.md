@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.10...v0.0.11) (2021-01-18)
+
+
+### Bug Fixes
+
+* adding comparators for strings and dates ([5c1eebf](https://github.com/cabcookie/cbk-functional-library/commit/5c1eebf27a6d8b56ecdc69b96e799a040e6b1f07))
+
 ### [0.0.10](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.9...v0.0.10) (2021-01-18)
 
 
