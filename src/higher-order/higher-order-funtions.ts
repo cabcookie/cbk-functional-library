@@ -1,6 +1,8 @@
 import { isArray } from "../arrays/array-functions"
 import { checkObjectForProperty, isObject } from "../objects/object-functions"
+import { flow } from "lodash/fp"
 
+export { flow }
 export const makeAsyncCall = (fn: Function, nextFn = defaultFn) => async (...args: any) => nextFn(await fn(...args))
 export const tryer = (tryFn: Function, errorFn: Function) => (data: any) => {
     try {
