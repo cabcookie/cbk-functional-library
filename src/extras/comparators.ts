@@ -1,31 +1,28 @@
 import { flow, get } from "lodash/fp"
-import { map } from "../arrays/array-functions"
+import { argsToArray, map } from "../arrays/array-functions"
+import { ifThenElse, isNullOrUndefined } from "../higher-order/higher-order-funtions"
 import { upperCase } from "../strings/string-functions"
-
-type FixedSizeArray<N extends number, T> = N extends 0 ? never[] : {
-    0: T;
-    length: N;
-} & ReadonlyArray<T>
-
-type AscDescString = "asc" | "desc"
+import { AscDescString, FixedSizeArray, GetNumberReturnNumber, HasKey, FunctionWithTwoParamsReturnNumber } from "./type-helpers"
 
 
-
-const compareValues = (arr: FixedSizeArray<2, string>) => (arr[0] > arr[1]) ? 1 :
+const compareValues: (arr: FixedSizeArray<2, string>) => number = arr => (arr[0] > arr[1]) ? 1 :
     (arr[0] < arr[1]) ? -1 : 0
-const getComparableDate = (date: Date) => (new Date(date)).getTime()
-const compareDateValues = (arr: FixedSizeArray<2, Date>) => getComparableDate(arr[0]) - getComparableDate(arr[1])
-const ascDesc = (order: AscDescString) => (val: number) => val === 0 ? 0 : order === 'desc' ? val * -1 : val
+const getComparableDate: (date: Date) => number = date => (new Date(date)).getTime()
+const compareDateValues: (arr: FixedSizeArray<2, Date>) => number = arr => getComparableDate(arr[0]) - getComparableDate(arr[1])
+const ascDesc: (order: AscDescString) => GetNumberReturnNumber = (order) => (val) => val === 0 ? 0 : order === 'desc' ? val * -1 : val
+const keyIsDefined: (key: string) => () => boolean = (key) => () => !isNullOrUndefined(key) && key !== ""
 
-export const stringComparator = (key = '', order: AscDescString = 'asc') => (str1: string, str2: string) => flow(
-    map(get(key)),
+export const stringComparator: <K extends string>(key: K, order: AscDescString) => FunctionWithTwoParamsReturnNumber<string | HasKey<K, string>> = (key, order = "asc") => flow(
+    argsToArray,
+    ifThenElse(keyIsDefined(key), map(get(key))),
     map(upperCase),
     compareValues,
     ascDesc(order)
-)([str1, str2])
+)
 
-export const dateComparator = (key = '', order: AscDescString = 'asc') => (date1: Date, date2: Date) => flow(
-    map(get(key)),
+export const dateComparator: <K extends string>(key: K, order: AscDescString) => FunctionWithTwoParamsReturnNumber<Date | HasKey<K, Date>> = (key, order = "asc") => flow(
+    argsToArray,
+    ifThenElse(keyIsDefined(key), map(get(key))),
     compareDateValues,
     ascDesc(order),
-)([date1, date2])
+)
