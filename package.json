@@ -5,7 +5,6 @@
     "main": "./lib/index.js",
     "scripts": {
         "push": "git push --follow-tags origin main",
-        "publish": "npm publish",
         "git-add-and-commit": "git add . && git commit -m 'fix: create build'",
         "wipe": "rm -rf ./lib",
         "build": "babel src -d lib --extensions '.ts'",
@@ -13,8 +12,6 @@
         "document-major": "standard-version --release-as major",
         "release": "npm-run-all test wipe build document push publish",
         "major-release": "npm-run-all test wipe build document-major push publish",
-        "old_release": "npm run wipe-and-build && standard-version && npm run push-and-publish",
-        "old_major-release": "npm run wipe-and-build && standard-version --release-as major && npm run push-and-publish",
         "fresh-npm-install": "rm -rf ./node_modules ./package-lock.json && npm install",
         "test": "tsc && jest"
     },
