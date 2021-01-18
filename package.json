@@ -5,7 +5,8 @@
     "main": "./lib/index.js",
     "scripts": {
         "push-and-publish": "git push --follow-tags origin main && npm publish",
-        "wipe-and-build": "rm -rf ./lib && tsc && git add . && git commit -m 'fix: create build'",
+        "git-add-and-commit": "git add . && git commit -m 'fix: create build'",
+        "wipe-and-build": "rm -rf ./lib && tsc",
         "release": "npm run wipe-and-build && standard-version && npm run push-and-publish",
         "major-release": "npm run wipe-and-build && standard-version --release-as major && npm run push-and-publish",
         "fresh-npm-install": "rm -rf ./node_modules ./package-lock.json && npm install"
