@@ -13,7 +13,8 @@
         "release": "npm-run-all test wipe build document push-and-publish",
         "major-release": "npm-run-all test wipe build document-major push-and-publish",
         "fresh-npm-install": "rm -rf ./node_modules ./package-lock.json && npm install",
-        "test": "jest"
+        "test": "jest",
+        "watch": "jest --watch"
     },
     "bugs": {
         "url": "https://github.com/cabcookie/cbk-functional-library/issues"
