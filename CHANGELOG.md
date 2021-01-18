@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.14](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.13...v0.0.14) (2021-01-18)
+
+
+### Bug Fixes
+
+* deleting old scripts and delete publish ([0f8a7a4](https://github.com/cabcookie/cbk-functional-library/commit/0f8a7a4eb009a9a2ca9187c7842d4935ca9e2b2b))
+* npm publishing ([dd14a19](https://github.com/cabcookie/cbk-functional-library/commit/dd14a19960119a1c2bb10a58519d0a1f6cbd2696))
+
 ### [0.0.13](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.12...v0.0.13) (2021-01-18)
 
 

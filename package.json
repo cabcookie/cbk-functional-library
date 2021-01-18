@@ -1,6 +1,6 @@
 {
     "name": "cbk-functional-library",
-    "version": "0.0.13",
+    "version": "0.0.14",
     "description": "This library includes functional helpers for object, string, and array processing.",
     "main": "./lib/index.js",
     "scripts": {
