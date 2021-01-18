@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.15](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.14...v0.0.15) (2021-01-18)
+
+
+### Bug Fixes
+
+* back to building with tsc instead of babel ([b8f0265](https://github.com/cabcookie/cbk-functional-library/commit/b8f0265b5e72428b165bf45ac3e16967240eaf44))
+
 ### [0.0.14](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.13...v0.0.14) (2021-01-18)
 
 
