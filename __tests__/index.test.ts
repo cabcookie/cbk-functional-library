@@ -1,4 +1,4 @@
-import { flow, get } from '../src/index'
+import { flow, get } from '../src'
 
 describe("test flow function", () => {
     type TestFunctionNumber = (str: String) => Number
