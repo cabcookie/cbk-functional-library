@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.18](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.17...v0.0.18) (2021-01-25)
+
+
+### Features
+
+* adding ifThenElse ([cf75d63](https://github.com/cabcookie/cbk-functional-library/commit/cf75d63ea35d4addcd7e0f891ea84fc2169b9978))
+
+
+### Bug Fixes
+
+* change standard language to en-US ([c51b9e1](https://github.com/cabcookie/cbk-functional-library/commit/c51b9e133ff9d235e9bcf514525e8244c0b287f4))
+* consider macOS in .gitignore ([ccbd04a](https://github.com/cabcookie/cbk-functional-library/commit/ccbd04a53355d6f3127405d2ba571640fbe2e3c4))
+* deleted lib folder ([3b6a7b7](https://github.com/cabcookie/cbk-functional-library/commit/3b6a7b7e4db902be6c063b572a3096681e8ec2a5))
+* ignore lib folder ([7f3fe29](https://github.com/cabcookie/cbk-functional-library/commit/7f3fe29d4bd3d110a37a643a2c87fee01e8fd3e0))
+* start npm package from scratch ([c40cd3d](https://github.com/cabcookie/cbk-functional-library/commit/c40cd3db2832731b6e7afdc1af406dbd66a8fa5f))
+
 ### [0.0.17](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.16...v0.0.17) (2021-01-18)
 
 
