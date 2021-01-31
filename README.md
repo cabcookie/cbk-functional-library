@@ -51,11 +51,10 @@ const inOneHour = addHoursToDate(new Date(), 1)
 
 I think it is useful to just import the functions you want to use in your code as shown in the example above.
 
+## Documentation
+
+Find the documentation for the library [here](./DOCUMENTATION.md).
+
 ## Contribute and raise issues
 
 Feel free to contribute to the library and send me a pull request in the [Github repo](https://github.com/cabcookie/cbk-functional-library). Also, feel free to raise an issue in the repo.
-
-## Todos
-
-- The library is missing test scenarios for now.
-- The `README.md` should include a documentation for all functions.
