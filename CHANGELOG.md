@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.20](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.19...v0.0.20) (2021-01-31)
+
+
+### Bug Fixes
+
+* lodash links in docu ([d9c68a2](https://github.com/cabcookie/cbk-functional-library/commit/d9c68a2273b3e446375913eb29d26d062b1def0a))
+
 ### [0.0.19](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.18...v0.0.19) (2021-01-31)
 
 
