@@ -1,6 +1,5 @@
 # Documentation for cbk-functional-library
 
-
 ## `flow`
 
 The function is imported from [lodash]](https://lodash.com/docs/4.17.15#flow).
