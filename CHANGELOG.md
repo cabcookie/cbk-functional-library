@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.19](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.18...v0.0.19) (2021-01-31)
+
+
+### Features
+
+* added a docu for the public functions ([7974836](https://github.com/cabcookie/cbk-functional-library/commit/7974836464e709e5908a89f16a8173ffa8b24075))
+
+
+### Bug Fixes
+
+* import of defaultFn ([438f7a9](https://github.com/cabcookie/cbk-functional-library/commit/438f7a95f4b53fdee2f559c08bd35dbfc5989703))
+* removed a blank line ([2683171](https://github.com/cabcookie/cbk-functional-library/commit/26831717b04808753d8ed7101b95c2545b1ddfd7))
+* removed defaultFn from public export ([6e19388](https://github.com/cabcookie/cbk-functional-library/commit/6e19388df755b59ab0d28e484e0750970469c08c))
+
 ### [0.0.18](https://github.com/cabcookie/cbk-functional-library/compare/v0.0.17...v0.0.18) (2021-01-25)
 
 
