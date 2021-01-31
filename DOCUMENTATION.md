@@ -2,11 +2,11 @@
 
 ## `flow`
 
-The function is imported from [lodash]](https://lodash.com/docs/4.17.15#flow).
+The function is imported from [lodash](https://lodash.com/docs/4.17.15#flow).
 
 ## `get`
 
-The function is imported from [lodash]](https://lodash.com/docs/4.17.15#get).
+The function is imported from [lodash](https://lodash.com/docs/4.17.15#get).
 
 ## `ifThenElse(ifFunc, thenFunc, elseFunc?)`
 
@@ -77,8 +77,8 @@ console.log(funcReturnsNull())
 
 ## `map`
 
-The function is imported from [lodash]](https://lodash.com/docs/4.17.15#map).
+The function is imported from [lodash](https://lodash.com/docs/4.17.15#map).
 
 ## `set`
 
-The function is imported from [lodash]](https://lodash.com/docs/4.17.15#set).
+The function is imported from [lodash](https://lodash.com/docs/4.17.15#set).
