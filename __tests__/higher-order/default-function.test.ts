@@ -1,4 +1,4 @@
-import { defaultFn } from '../../src'
+import { defaultFn } from '../../src/higher-order'
 
 describe("test defaultFn", () => {
     const str = "test"
